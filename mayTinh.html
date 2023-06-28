@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Calculator</h2>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <br>
+    <button onclick="add()">Addition(+)</button>
+    <button onclick="sub()">Subtraction(-)</button>
+    <button onclick="mul()">Multiplication(x)</button>
+    <button onclick="div()">Division(/)</button>
+
+    <script>
+        function add() {
+            let a = +document.getElementById("number1").value;
+            let b = +document.getElementById("number2").value;
+            let sum;
+            sum = a + b;
+            document.write(sum);
+        }
+
+        function sub() {
+            let a = +document.getElementById("number1").value;
+            let b = +document.getElementById("number2").value;
+            let sub;
+            sub = a - b;
+            document.write(sub);
+        }
+
+        function mul() {
+            let a = +document.getElementById("number1").value;
+            let b = +document.getElementById("number2").value;
+            let mul;
+            mul = a * b;
+            document.write(mul);
+        }
+
+        function div() {
+            let a = +document.getElementById("number1").value;
+            let b = +document.getElementById("number2").value;
+            let div;
+            div = a / b;
+            document.write(div);
+        }
+    </script>
+</body>
+
+</html>
